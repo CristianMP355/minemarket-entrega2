@@ -1,0 +1,26 @@
+
+
+Hola Claude. Vamos a construir desde cero el proyecto "MineMarket" (Plataforma Transaccional para Servidores de Minecraft) correspondiente a la Entrega Parcial 2 (Semana 12) en esta carpeta actual.
+
+Por favor crea la arquitectura del proyecto (Backend Node.js/Express y Frontend React/Vite o HTML+JS) con la siguiente funcionalidad:
+
+1. HISTORIAS DE USUARIO Y GHERKIN:
+   - Crea el archivo `docs/HISTORIAS_DE_USUARIO.md` redactando las Historias de Usuario con escenarios Gherkin (Dado/Cuando/Entonces) para Registro, Login, Catálogo y CRUD de Ítems Digitales.
+
+2. AUTENTICACIÓN FUNCIONAL:
+   - Backend: Endpoints `POST /api/auth/register` (encriptando con bcrypt y guardando gamertag_minecraft) y `POST /api/auth/login` (retornando JWT firmado).
+   - Frontend: Formularios interactivos para Registro y Login con manejo de token JWT.
+
+3. CRUD BÁSICO DE ÍTEMS DIGITALES:
+   - Backend: API REST para `ITEM_DIGITAL` (GET /api/items, POST /api/items, PUT /api/items/:id, DELETE /api/items/:id).
+   - Frontend: Vista tipo panel/catálogo para listar e interactuar con los ítems.
+
+4. PRUEBAS AUTOMATIZADAS:
+   - Configura en package.json los comandos: `npm run test` y `npm run tests:e2e`.
+   - Crea más de 5 pruebas unitarias con reporte de cobertura (testing de bcrypt, JWT, middleware RBAC, etc.).
+   - Crea al menos 2 pruebas E2E con Playwright basadas en los escenarios Gherkin.
+
+5. CONFIGURACIÓN DOBLE DE SONARQUBE:
+   - Configura los archivos `sonar-project.properties` para backend y frontend indicando la ruta del reporte de cobertura lcov.
+
+Genera todos los paquetes, archivos de código, pruebas y configuraciones necesarias dentro de este directorio.

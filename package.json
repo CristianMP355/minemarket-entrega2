@@ -1,0 +1,13 @@
+{
+  "name": "minemarket",
+  "version": "1.0.0",
+  "description": "MineMarket - Plataforma Transaccional para Servidores de Minecraft (Entrega Parcial 2)",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install && npm --prefix frontend run playwright:install",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "test": "npm --prefix backend test && npm --prefix frontend test",
+    "tests:e2e": "npm --prefix frontend run tests:e2e"
+  }
+}
